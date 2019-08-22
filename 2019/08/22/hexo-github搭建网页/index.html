@@ -5,15 +5,40 @@
   
 
   
-  <title>Hexo</title>
+  <title>hexo+github搭建网页 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://lovezczh.github.io/ChennySe.github.io/index.html">
+  <meta name="description" content="本流程综合了以下流程，可参考原文：  hexo + github pages搭建博客样式加载不出来 https://blog.csdn.net/banjw_129/article/details/82261165   最简单的Hexo搭建博客教程 https://segmentfault.com/a/1190000003812308   图解 hexo + github 从零快速 搭建个人博客 w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github搭建网页">
+<meta property="og:url" content="https://lovezczh.github.io/ChennySe.github.io/2019/08/22/hexo-github搭建网页/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本流程综合了以下流程，可参考原文：  hexo + github pages搭建博客样式加载不出来 https://blog.csdn.net/banjw_129/article/details/82261165   最简单的Hexo搭建博客教程 https://segmentfault.com/a/1190000003812308   图解 hexo + github 从零快速 搭建个人博客 w">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461622904.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461726385.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461766185.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461879242.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461896161.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5%5C1566461909487.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461924156.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461935513.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461950436.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461962101.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461979349.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461990213.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462000714.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462006513.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462012569.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462024226.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462038600.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462051043.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462058220.png">
+<meta property="og:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566462064410.png">
+<meta property="og:updated_time" content="2019-08-22T08:27:13.533Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="hexo+github搭建网页">
+<meta name="twitter:description" content="本流程综合了以下流程，可参考原文：  hexo + github pages搭建博客样式加载不出来 https://blog.csdn.net/banjw_129/article/details/82261165   最简单的Hexo搭建博客教程 https://segmentfault.com/a/1190000003812308   图解 hexo + github 从零快速 搭建个人博客 w">
+<meta name="twitter:image" content="https://lovezczh.github.io/ChennySe.github.io/ChennySe.github/C:%5CUsers%5C%E8%B5%B5%E7%90%9B%5CDesktop%5CHEXO%5Csource_posts%5Chexo-github%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5.assets%5C1566461622904.png">
   
     <link rel="alternate" href="/ChennySe.github.io/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,155 +85,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo-github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/ChennySe.github.io/2019/08/22/hexo-github/" class="article-date">
-  <time datetime="2019-08-22T08:29:18.000Z" itemprop="datePublished">2019-08-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/ChennySe.github.io/2019/08/22/hexo-github/">hexo+github</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本流程综合了以下流程，可参考原文：</p>
-<ol>
-<li><p>hexo + github pages搭建博客样式加载不出来</p>
-<p><a href="https://blog.csdn.net/banjw_129/article/details/82261165" target="_blank" rel="noopener">https://blog.csdn.net/banjw_129/article/details/82261165</a> </p>
-</li>
-<li><p>最简单的Hexo搭建博客教程</p>
-<p><a href="https://segmentfault.com/a/1190000003812308" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003812308</a> </p>
-</li>
-<li><p>图解 hexo + github 从零快速 搭建个人博客 windows</p>
-<p><a href="https://segmentfault.com/a/1190000014093946" target="_blank" rel="noopener">https://segmentfault.com/a/1190000014093946</a></p>
-</li>
-<li><p>超详细Hexo+Github博客搭建小白教程</p>
-<p><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a> </p>
-</li>
-<li><p>利用 Hexo + Github Pages 搭建博客并优化 Next 主题教程</p>
-<p><a href="https://michael728.github.io/2019/05/19/hexo-blog-full-note/" target="_blank" rel="noopener">https://michael728.github.io/2019/05/19/hexo-blog-full-note/</a> </p>
-</li>
-<li><p>常见错误8-搭建hexo，本地server成功，部署到github上之后不能显示主题样式</p>
-<p><a href="https://blog.csdn.net/qq_29347295/article/details/79005154" target="_blank" rel="noopener">https://blog.csdn.net/qq_29347295/article/details/79005154</a> </p>
-</li>
-<li><p>Hexo上传的图片在网页上无法显示的解决办法<a href="http://www.yuanerhero.top/2018/04/18/Hexo%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%8A%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" target="_blank" rel="noopener">http://www.yuanerhero.top/2018/04/18/Hexo%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%9B%BE%E7%89%87%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%8A%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</a> </p>
-<hr>
-</li>
-</ol>
-<h2 id="HEXO-github网站流程"><a href="#HEXO-github网站流程" class="headerlink" title="HEXO+github网站流程"></a>HEXO+github网站流程</h2><h4 id="1-下载安装NodeJS"><a href="#1-下载安装NodeJS" class="headerlink" title="1.下载安装NodeJS"></a>1.下载安装NodeJS</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> </p>
-<p>LTS为长期支持版，Current为当前最新版  //下载LTS就好了 ）</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461622904.png" alt="1566461622904"></p>
-<ul>
-<li>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next</li>
-</ul>
-<h4 id="2-下载安装Git-Bash"><a href="#2-下载安装Git-Bash" class="headerlink" title="2.下载安装Git Bash"></a>2.下载安装Git Bash</h4><p><a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">https://git-for-windows.github.io/</a></p>
-<h4 id="3-建一个文件夹，例如自己建了一个名为HEXO的文件夹"><a href="#3-建一个文件夹，例如自己建了一个名为HEXO的文件夹" class="headerlink" title="3.建一个文件夹，例如自己建了一个名为HEXO的文件夹"></a>3.建一个文件夹，例如自己建了一个名为HEXO的文件夹</h4><p>然后双击进去。进去之后，鼠标点击右键，会出现 <strong>Git Bash Here</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli #安装HEXO，时间可能会长，不要担心</span><br><span class="line">$ hexo init  </span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<p>回到「HEXO」文件夹下，你会看到，多了好多东西，不要慌，继续依次输入如下命令 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g  </span><br><span class="line">$ hexo</span><br></pre></td></tr></table></figure>
-
-<p>此时会出现一个网址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> </p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461726385.png" alt="1566461726385"></p>
-<p>在浏览器里输入后，就会发现Hexo已经搭建完成。</p>
-<p>按<code>ctrl+c</code>关闭本地服务器。 </p>
-<p>但是这个只是在你本地，也就是你的电脑上搭建好了，如果想让别人也能看到，你需要github。</p>
-<h4 id="4-搭建github"><a href="#4-搭建github" class="headerlink" title="4.搭建github"></a>4.搭建github</h4><p><img src="/ChennySe.github.io/ChennySe.github/1566461766185.png" alt="1566461766185"></p>
-<p><u><strong>repository name</strong> 可以和用户名不同，并不影响</u> </p>
-<p><u>必须要勾上README，后面要用</u> </p>
-<h4 id="5-连接GitHub和本地"><a href="#5-连接GitHub和本地" class="headerlink" title="5.连接GitHub和本地"></a>5.连接GitHub和本地</h4><ol>
-<li>首先目录文件夹下右键打开git bash，然后输入下面命令：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;用户邮箱&quot;</span><br></pre></td></tr></table></figure>
-
-<p>用户名和邮箱根据你注册github的信息自行修改。用户名是github账号的用户名，不是之前创建的github.io的用户名。邮箱是github注册的邮箱。比如其他人的实例：</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461879242.png" alt="1566461879242"></p>
-<p>中间会提示有信息要填，就一直回车就好了。</p>
-<ol>
-<li>然后生成密钥SSH key：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;1014481557@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>找到.ssh的文件夹，打开红线标的文件，复制里面的内容</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461896161.png" alt="1566461896161"></p>
-<ol>
-<li>回到github网站进行ssh设置</li>
-</ol>
-<p>点击头像上的settings，点击new ssh key</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461909487.png" alt="1566461909487"></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461924156.png" alt="1566461924156"></p>
-<h4 id="6-修改HEXO文件夹中的-config-yml（用编辑器，如notepad打开）"><a href="#6-修改HEXO文件夹中的-config-yml（用编辑器，如notepad打开）" class="headerlink" title="6.修改HEXO文件夹中的_config.yml（用编辑器，如notepad打开）"></a>6.修改HEXO文件夹中的<code>_config.yml</code>（用编辑器，如notepad打开）</h4><p>在文件最下方的地方进行修改。</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461935513.png" alt="1566459302806"></p>
-<p><strong>注意type冒号后面有个空格；repo和branch一样要有一个空格，不然后面会出错。同时注意repo的地址:<code>git@github.com:注册名/xxx.github.io</code></strong></p>
-<p>在github里可以确认冒号后面的信息：</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461950436.png" alt="1566391702902"></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461962101.png" alt="1566391730477"></p>
-<p>右键git bash中输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。 </p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461979349.png" alt="1566459339336"></p>
-<h4 id="7-上传到github"><a href="#7-上传到github" class="headerlink" title="7.上传到github"></a>7.上传到github</h4><p><strong>鼠标右击 进入 git base！</strong><br>先安装：npm i hexo-deployer-git –save<br>执行命令(最好每次修改后都这样操作一下)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>打开github 网站 ，就会发现和本地的页面是相同的。</p>
-<hr>
-<p><strong>问题1:出现本地和github上不同的情况</strong></p>
-<p>可能是因为时间短还未同步或者突然网络不好，如果不是时间和网路的问题，那么可以：<strong>进入到blog文件夹，在里面按住“shift+鼠标右键”，在此处打开powershell窗口，输入</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>问题2：解决ERROR Deployer not found</strong></p>
-<p><strong>在powershell输入</strong><code>npm install hexo-deployer-git --save</code></p>
-<p><strong>在弹出的git界面输入你的github用户名密码</strong>#其实没有提示我输入密码</p>
-<hr>
-<p><strong>问题3：中间我出现了hexo + github pages搭建博客样式加载不出来的情况，类似于下图：</strong></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566461990213.png" alt="1566461990213"></p>
-<p>这是需要修改_config.yml文件中的url地址和根目录</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462000714.png" alt="1566462000714"></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462006513.png" alt="1566459399105"></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462012569.png" alt="1566459378925"></p>
-<p>root是搭建该博客的仓库名</p>
-<h4 id="8-写文章，发布文章"><a href="#8-写文章，发布文章" class="headerlink" title="8.写文章，发布文章"></a>8.写文章，发布文章</h4><p>首先在文件夹根目录下右键打开git bash，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
-<p>然后找到<code>Hexo</code>下的<code>_config.yml</code>里的<code>post_asset_folder</code>，把这个选项从<code>false</code>改成<code>true</code>。 </p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462024226.png" alt="1566462024226"></p>
-<p>接着在<code>Hexo</code>目录下右键打开Git Brsh，执行一个下载上传图片插件的命令<code>npm install hexo-asset-image --save</code>。 </p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462038600.png" alt="1566462038600"></p>
-<p>然后输入<code>hexo new post &quot;article title&quot;</code>或者输入<code>hexo n &quot;xxx&quot;</code>，新建一篇文章。</p>
-<p>然后打开<code>source\_posts</code>的目录，可以发现下面多了一个文件夹和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。</p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462051043.png" alt="1566462051043"></p>
-<p>编写完markdown文件后，根目录下输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>可以本地预览效果，最后输入<code>hexo d</code>上传到github上。这时打开你的github.io主页就能看到发布的文章啦。 </p>
-<p>*<em>注意：<code>.md</code>的文件中要插入图片时，先要把所要插入的图片放在生成的同名文件夹下。 *</em></p>
-<h4 id="9-绑定域名"><a href="#9-绑定域名" class="headerlink" title="9.绑定域名"></a>9.绑定域名</h4><p>我是在百度云买的，可以在阿里云买。当时脑子一抽想错了</p>
-<p>买好域名后，打开github博客项目，点击<code>settings</code>，拉到下面<code>Custom domain</code>处，填上你自己的域名，保存： </p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462058220.png" alt="1566462058220"></p>
-<p><img src="/ChennySe.github.io/ChennySe.github/1566462064410.png" alt="img"> </p>
-<p>这时候你的项目根目录应该会出现一个名为<code>CNAME</code>的文件了。如果没有的话，打开你本地博客<code>/source</code>目录，新建<code>CNAME</code>文件，注意没有后缀。然后在里面写上你的域名，保存。最后运行<code>hexo g</code>、<code>hexo d</code>上传到github。 </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://lovezczh.github.io/ChennySe.github.io/2019/08/22/hexo-github/" data-id="cjzmfvd7f0002bonha7n9dj5f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo-github搭建网页" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hexo-github搭建网页" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/ChennySe.github.io/2019/08/22/hexo-github搭建网页/" class="article-date">
   <time datetime="2019-08-22T07:25:36.000Z" itemprop="datePublished">2019-08-22</time>
@@ -221,8 +98,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/ChennySe.github.io/2019/08/22/hexo-github搭建网页/">hexo+github搭建网页</a>
+    <h1 class="article-title" itemprop="name">
+      hexo+github搭建网页
     </h1>
   
 
@@ -350,11 +227,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/ChennySe.github.io/2019/08/22/hexo-github/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo+github
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
